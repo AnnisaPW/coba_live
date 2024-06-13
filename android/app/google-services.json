@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "319613593405",
+    "project_id": "coba-live",
+    "storage_bucket": "coba-live.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319613593405:android:bba9a4df6996301d2f0754",
+        "android_client_info": {
+          "package_name": "com.example.coba_live"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByaBOS0hNIWA6VL7MJWHGkDVG7HIhyV1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
