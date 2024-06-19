@@ -9,6 +9,9 @@ Future<void> inits() async {
   );
 
   Serv.sample.init();
+  Serv.product.init();
+
+  setPathUrlStrategy();
 
   logx.wtf('inits success');
 }
