@@ -1,6 +1,5 @@
 import 'dart:math';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:coba_live/ui_widgets/spaces/_index.dart';
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
