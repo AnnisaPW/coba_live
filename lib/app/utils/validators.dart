@@ -109,13 +109,13 @@ class Validate {
     return null;
   }
 
-  // static String? pwdEquals(String? str1) {
-  //   final str2 = x1RegisData.st.rxPwdA.value;
-  //   if (str1 != str2) {
-  //     return "not equals";
-  //   }
-  //   return null;
-  // }
+  static String? pwdEquals(String? str1) {
+    final str2 = Data.register.st.rxPassword.text;
+    if (str1 != str2) {
+      return "not equals";
+    }
+    return null;
+  }
 
   static String? regExp(String? str, RegExp regExp) {
     if (str != null && !regExp.hasMatch(str)) {

@@ -12,7 +12,20 @@
           "package_name": "com.example.coba_live"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "319613593405-b34p8nvi06g158nsc8fifk1kgo7eb6di.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.coba_live",
+            "certificate_hash": "ebbaae671e8dc9cce4d91404f5340aab4a2dfc22"
+          }
+        },
+        {
+          "client_id": "319613593405-id35g0tl71onsrb9hkegfmqu35u51vqd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyByaBOS0hNIWA6VL7MJWHGkDVG7HIhyV1c"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319613593405-id35g0tl71onsrb9hkegfmqu35u51vqd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

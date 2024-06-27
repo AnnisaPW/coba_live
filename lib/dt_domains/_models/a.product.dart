@@ -7,6 +7,7 @@ class Product {
   final int price;
   final String createdAt;
   final String updatedAt;
+  final String imageUrl;
   Product({
     this.id = '',
     this.name = '',
@@ -14,6 +15,7 @@ class Product {
     this.price = 0,
     this.createdAt = '',
     this.updatedAt = '',
+    this.imageUrl = '',
   });
 
   Product copyWith({
@@ -23,6 +25,7 @@ class Product {
     int? price,
     String? createdAt,
     String? updatedAt,
+    String? imageUrl,
   }) {
     return Product(
       id: id ?? this.id,
@@ -31,6 +34,7 @@ class Product {
       price: price ?? this.price,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
+      imageUrl: imageUrl ?? this.imageUrl,
     );
   }
 
@@ -43,6 +47,7 @@ class Product {
     result.addAll({'price': price});
     result.addAll({'created_at': createdAt});
     result.addAll({'updated_at': updatedAt});
+    result.addAll({'image_url': imageUrl});
 
     return result;
   }
@@ -55,6 +60,7 @@ class Product {
       price: map['price']?.toInt() ?? 0,
       createdAt: map['created_at'] ?? '',
       updatedAt: map['updated_at'] ?? '',
+      imageUrl: map['image_url'] ?? '',
     );
   }
 
@@ -64,7 +70,7 @@ class Product {
 
   @override
   String toString() {
-    return 'Product(id: $id, name: $name, quantity: $quantity, price: $price, createdAt: $createdAt, updatedAt: $updatedAt)';
+    return 'Product(id: $id, name: $name, quantity: $quantity, price: $price, createdAt: $createdAt, updatedAt: $updatedAt, imageUrl: $imageUrl)';
   }
 
   @override
@@ -77,11 +83,18 @@ class Product {
         other.quantity == quantity &&
         other.price == price &&
         other.createdAt == createdAt &&
-        other.updatedAt == updatedAt;
+        other.updatedAt == updatedAt &&
+        other.imageUrl == imageUrl;
   }
 
   @override
   int get hashCode {
-    return id.hashCode ^ name.hashCode ^ quantity.hashCode ^ price.hashCode ^ createdAt.hashCode ^ updatedAt.hashCode;
+    return id.hashCode ^
+        name.hashCode ^
+        quantity.hashCode ^
+        price.hashCode ^
+        createdAt.hashCode ^
+        updatedAt.hashCode ^
+        imageUrl.hashCode;
   }
 }

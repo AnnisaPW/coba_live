@@ -11,6 +11,10 @@ class ProductProv {
 
   final limit = 3;
 
+  final rxImageUrl = ''.inj();
+
+  final coll = 'products';
+
   final rxIsEnd = false.inj();
 
   final rxLoadMore = RM.injectFuture<List<Product>>(() => Future.value([]),
@@ -31,7 +35,6 @@ class ProductProv {
     sideEffects: SideEffects(
       initState: () => _sv.readProduct(),
     ),
-    autoDisposeWhenNotUsed: false,
   );
 
   final rxSelectedId = RM.inject<String>(() => '');

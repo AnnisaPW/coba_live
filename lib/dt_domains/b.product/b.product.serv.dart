@@ -13,6 +13,11 @@ class ProductServ {
     logzz.i(ProductServ, 'rxCounter setState success');
   }
 
+  Future<String> uploadImage(XFile? pickedFile, String doc) async {
+    final urlFromStorage = _rp.uploadImage(pickedFile, doc);
+    return urlFromStorage;
+  }
+
   readProducts() {
     _pv.rxLoadMore.stateAsync = _rp.readProducts();
   }
@@ -31,6 +36,9 @@ class ProductServ {
 
   Future<void> deleteProduct(String doc) async {
     await _rp.deleteProduct(doc);
+    if (_pv.rxProductDetail.st!.imageUrl.isNotEmpty) {
+      await _rp.deleteImage();
+    }
     _pv.rxProductList.st = [..._pv.rxProductList.st]..removeWhere((element) => element.id == doc);
   }
 
@@ -49,6 +57,8 @@ class ProductServ {
   }
 
   setSelectedId(String id) {
-    _pv.rxSelectedId.st = id;
+    _pv.rxSelectedId.refresh();
+
+    _pv.rxSelectedId.setState((s) => id);
   }
 }

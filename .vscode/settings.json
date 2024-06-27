@@ -24,8 +24,6 @@
     "*.vscode.*": true,
     "*analysis_options": true,
     "*analysis_options.*": true,
-    "*android": true,
-    "*android.*": true,
     "*build": true,
     "*build.*": true,
     "*coba_live": true,
@@ -51,8 +49,6 @@
     "*storage.*": true,
     "*test": true,
     "*test.*": true,
-    "*web": true,
-    "*web.*": true,
     "*windows": true,
     "*windows.*": true
   }

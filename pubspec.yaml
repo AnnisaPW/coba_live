@@ -23,6 +23,10 @@ dependencies:
   validators: ^3.0.0
   keyboard_dismisser: ^3.0.0
   url_strategy: ^0.2.0
+  image_picker: ^1.1.2
+  firebase_auth: ^5.1.0
+  google_sign_in: ^6.2.1
+  hive_flutter: ^1.1.0
 
 dev_dependencies:
   flutter_test:
