@@ -26,30 +26,25 @@ class RegisterView extends StatelessWidget {
             ),
             child: OnFormBuilder(
               listenTo: _dt.rxForm,
-              builder: () => SingleChildScrollView(
+              builder: () => const SingleChildScrollView(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text(
+                    Text(
                       'Sign up',
                       textScaler: TextScaler.linear(3),
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                    const SizedBoxH(20),
-                    const RegisterEmail(),
-                    const SizedBoxH(15),
-                    const RegisterPassword(),
-                    const SizedBoxH(15),
-                    const RegisterRetypePassword(),
-                    const SizedBoxH(20),
-                    const RegisterSubmit(),
-                    const SizedBoxH(10),
-                    TextButton(
-                      onPressed: () {
-                        nav.toReplacement(Routes.login);
-                      },
-                      child: const Text('Already have an account? Sign in'),
-                    ),
+                    SizedBoxH(20),
+                    RegisterEmail(),
+                    SizedBoxH(15),
+                    RegisterPassword(),
+                    SizedBoxH(15),
+                    RegisterRetypePassword(),
+                    SizedBoxH(20),
+                    RegisterSubmit(),
+                    SizedBoxH(10),
+                    RegisterToLogin(),
                   ],
                 ),
               ),

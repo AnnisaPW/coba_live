@@ -16,6 +16,7 @@ part 'widgets/c.register.email.dart';
 part 'widgets/d.register.password.dart';
 part 'widgets/e.register.retype_password.dart';
 part 'widgets/f.register.submit.dart';
+part 'widgets/g.register.to_login.dart';
 
 RegisterData get _dt => Data.register.st;
 RegisterCtrl get _ct => Ctrl.register;
