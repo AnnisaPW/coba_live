@@ -6,10 +6,6 @@ class RegisterView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: const PreferredSize(
-      //   preferredSize: Size.fromHeight(56),
-      //   child: RegisterAppbar(),
-      // ),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(10),

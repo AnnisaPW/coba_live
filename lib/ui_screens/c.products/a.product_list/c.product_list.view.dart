@@ -11,14 +11,34 @@ class ProductListView extends StatelessWidget {
         child: ProductListAppbar(),
       ),
       floatingActionButton: const ProductListFab(),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: OnBuilder.all(
-            listenToMany: [_dt.rxProductList, _dt.rxLoadMore],
-            onWaiting: () => const CircularProgressIndicator(),
-            onError: (error, refreshError) => const Text('Error'),
-            onData: (data) => Column(
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: OnBuilder.all(
+          listenToMany: [_dt.rxLoadMore],
+          onWaiting: () => _dt.rxProductList.st.isEmpty
+              ? const Center(
+                  child: CircularProgressIndicator(),
+                )
+              : const ProductListCards(),
+          onError: (error, refreshError) => Text('Error: $error'),
+          onData: (data) => const ProductListCards(),
+        ),
+      ),
+    );
+  }
+}
+
+class ProductListCards extends StatelessWidget {
+  const ProductListCards({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return _dt.rxProductList.st.isEmpty
+        ? const Center(child: Text('Tidak ada data produk'))
+        : SingleChildScrollView(
+            child: Column(
               children: [
                 ...List.generate(
                   _dt.rxProductList.st.length,
@@ -58,20 +78,29 @@ class ProductListView extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBoxH(15),
-                Center(
-                  child: _dt.rxIsEnd.st == true
-                      ? const Text('end of list')
-                      : OutlinedButton(
-                          onPressed: () => _ct.loader(),
-                          child: const Text('load more'),
-                        ),
-                )
+                // const SizedBoxH(10),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 35, 20, 30),
+                  child: OnBuilder.all(
+                    listenToMany: [_dt.rxLoadMore],
+                    onWaiting: () => const Center(
+                      child: SizedBox(
+                        height: 30,
+                        width: 30,
+                        child: CircularProgressIndicator(strokeWidth: 3),
+                      ),
+                    ),
+                    onError: (error, refreshError) => error,
+                    onData: (data) => _dt.rxIsEnd.st == true
+                        ? const Center(child: Text('~~ End of list ~~'))
+                        : OutlinedButton(
+                            child: const Text('Load more'),
+                            onPressed: () => _ct.loader(),
+                          ),
+                  ),
+                ),
               ],
             ),
-          ),
-        ),
-      ),
-    );
+          );
   }
 }

@@ -12,8 +12,6 @@
     "*.fttemplates.*": true,
     "*.git": true,
     "*.git.*": true,
-    "*.gitignore": true,
-    "*.gitignore.*": true,
     "*.idea": true,
     "*.idea.*": true,
     "*.metadata": true,

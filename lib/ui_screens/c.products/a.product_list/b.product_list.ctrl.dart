@@ -25,7 +25,6 @@ class ProductListCtrl {
       createdAt: DateTime.now().toString(),
     );
     _sv.createProduct(product);
-    // _dt.rxProductList.refresh();
   }
 
   updateProduct(String doc) async {

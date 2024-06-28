@@ -7,21 +7,6 @@ class RegisterCtrl {
 
   updateRandom() => Serv.sample.updateRandom();
 
-  // Future<UserCredential> createEmailAndPassword(String email, String password) async {
-  //   final result = await FirebaseAuth.instance.createUserWithEmailAndPassword(
-  //     email: email,
-  //     password: password,
-  //   );
-  //   return result;
-  // }
-
-  // Future<void> signUpEmailAndPassword() async {
-  //   _dt.rxUser.st = await createEmailAndPassword(
-  //     'exa@mail.com',
-  //     'secret12',
-  //   );
-  // }
-
   signUpEmailAndPassword() async {
     await _sv.createEmailAndPassword(_dt.rxEmail.value, _dt.rxPassword.value);
   }

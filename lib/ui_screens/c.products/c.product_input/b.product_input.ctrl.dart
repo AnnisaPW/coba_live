@@ -14,7 +14,7 @@ class ProductInputCtrl {
 
   createProduct() async {
     final product = Product(
-      id: const Uuid().v4(),
+      id: const Uuid().v1(),
       name: _dt.rxName.value,
       price: int.parse(_dt.rxPrice.value),
       quantity: int.parse(_dt.rxQuantity.value),

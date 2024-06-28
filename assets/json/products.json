@@ -1,0 +1,52 @@
+[
+  {
+    "created_at": "2024-05-27 10:23:17.079",
+    "id": "673ecf00-73da-1052-b923-f3ff85cff896",
+    "image_url": "",
+    "name": "Bear Brand Susu Kaleng",
+    "description": "BEAR BRAND merupakan 100% susu sapi murni siap konsumsi yang telah mengalami proses sterilisasi tanpa penambahan bahan pengawet didalamnya. Susu murni yang terkandung di dalamnya dapat membantu menjaga kesehatan tubuh. Minuman yang mengandung 100% susu murni untuk membantu menjaga kesehatan tubuh.",
+    "price": 11000,
+    "quantity": 10,
+    "updated_at": ""
+  },
+  {
+    "created_at": "2024-06-28 13:23:17.079",
+    "id": "553ecf00-73da-1052-b923-f3ff85cff896",
+    "image_url": "",
+    "name": "Good Time Double Choc",
+    "description": "Good Time Classic Chocochips Cookies 72 gr merupakan snack biskuit persembahan GOOD TIME yang sangat renyah dan enak. Biskuit ini bertabur coklat lezat yang menambah kenikmatan setiap gigitanya. Terbuat dengan bahan berkualitas dan melalui proses dengan teknologi tinggi sehingga aman di konsumsi dan hiegienis.",
+    "price": 1500,
+    "quantity": 20,
+    "updated_at": ""
+  },
+  {
+    "created_at": "2024-06-27 11:23:17.079",
+    "id": "893bcf00-73da-1052-b923-f3ff85cff896",
+    "image_url": "",
+    "name": "Roma Biskuit Kelapa",
+    "description": "Roma Kelapa merupakan biskuit yang dibuat dari kelapa segar pilihan. Biskuit ini dilengkapi dengan sumber vitamin dan kalsium yang dapat menutrisi tubuh Anda. Nikmati biskuit bersama teh di sore hari dapat mencerahkan hari Anda.",
+    "price": 9000,
+    "quantity": 30,
+    "updated_at": ""
+  },
+  {
+    "created_at": "2024-06-27 14:23:17.079",
+    "id": "568bcf00-73da-1052-b923-f3ff85cff896",
+    "image_url": "",
+    "name": "Beng Beng Wafer Caramel Cokelat",
+    "description": "Wafer cokelat dengan rice crispy yang berbalut cokelat susu yang nikmat. Lapisan cream yang lezat dan lembut, cemilan ini tidak bisa ditolak oleh segala usia. Sangat cocok untuk cemilan dikala senggang, dimana saja dan kapan sajaa atau ideal juga dijadikan cemilan sehat saat santai Anda bersama keluarga.",
+    "price": 3000,
+    "quantity": 50,
+    "updated_at": ""
+  },
+  {
+    "created_at": "2024-06-27 16:23:17.079",
+    "id": "123bcf00-73da-1052-b923-f3ff85cff896",
+    "image_url": "",
+    "name": "Energen Susu dan Cereal",
+    "description": "Roma Kelapa merupakan biskuit yang dibuat dari kelapa segar pilihan. Biskuit ini dilengkapi dengan sumber vitamin dan kalsium yang dapat menutrisi tubuh Anda. Nikmati biskuit bersama teh di sore hari dapat mencerahkan hari Anda.",
+    "price": 2200,
+    "quantity": 60,
+    "updated_at": ""
+  }
+]

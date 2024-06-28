@@ -11,10 +11,6 @@ class LoginCtrl {
     await _sv.signInAnonymous();
   }
 
-  // signOut() async {
-  //   await _sv.signOut();
-  // }
-
   submitEmailAndPassword() async {
     await _sv.signInWithEmailAndPassword(_dt.rxEmail.value, _dt.rxPassword.value);
   }
